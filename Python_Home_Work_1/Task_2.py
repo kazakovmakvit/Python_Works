@@ -6,7 +6,7 @@
 xyz = ["X", "Y", "Z"]
 a = []
 for i in range(3):
-    a.append(input(f"Введите значение {xyz[i]}: "))
+    a.append(input(f"Введите значение {xyz[i]}: "))       # Прикольное заполнение данных, взять на заметку
 
 left = not (xyz[0] or xyz[1] or xyz[2])
 right = not xyz[0] and not xyz[1] and not xyz[2]
