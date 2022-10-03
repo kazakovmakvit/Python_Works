@@ -7,4 +7,4 @@ a = [] * n
 for i in range(0, n + 1 ):
     a.append(randint(0, n).split(','))
 print(a)
-.split(',')
+..split(',')
