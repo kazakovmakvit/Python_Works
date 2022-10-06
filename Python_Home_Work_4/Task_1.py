@@ -1,4 +1,16 @@
+# Вычислить число пи c заданной точностью *d*
 
-d = 0.001
-# print(10**{-1} <= d <= 10**{-10})
-print(f'{10**(-1)} <= {d} <= {10 ** (-10)}')
+def calc_pi(eps=1.0e-5):
+    s=0
+    d=1
+    sgn=1
+    while True:
+        a=4/d
+        s=s+sgn*a
+        if a<eps:
+            return s
+        sgn=-sgn
+        d=d+2
+ 
+ 
+print(calc_pi())
